@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Navbar from "../components/navbar";
-import Subteams from "../components/subteams";
+import SubteamsComponent from "../components/subteams";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -19,10 +19,10 @@ export default function Home() {
 
   return (
     <div className="bg-black">
+      <Navbar />
+      
       {/* Hero Section */}
       <div className="min-h-screen relative overflow-hidden">
-        <Navbar />
-        
         {/* Interactive dot background */}
         <div className="dot-background absolute inset-0 opacity-20"></div>
         
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Subteams />
+      <SubteamsComponent />
     </div>
   );
 }

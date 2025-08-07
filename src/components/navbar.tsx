@@ -36,19 +36,19 @@ export default function Navbar() {
 
         <div className="flex space-x-8 items-center">
           <div>
-            <Link href="" className="hover:underline transition-all duration-200">Home</Link>
+            <Link href="/" className="hover:underline transition-all duration-200">Home</Link>
           </div>
           <div>
-            <Link href="href" className="hover:underline transition-all duration-200">About</Link>
+            <Link href="/about" className="hover:underline transition-all duration-200">About</Link>
           </div>
           <div>
-            <Link href="" className="hover:underline transition-all duration-200">Subteams</Link>
+            <Link href="/subteams" className="hover:underline transition-all duration-200">Subteams</Link>
           </div>
           <div>
-            <Link href="href" className="hover:underline transition-all duration-200">Sponsors</Link>
+            <Link href="/sponsors" className="hover:underline transition-all duration-200">Sponsors</Link>
           </div>
           <div>
-            <Link href="Join Us!" className="hover:underline transition-all duration-200">Join Us!</Link>
+            <Link href="/join" className="hover:underline transition-all duration-200">Join Us!</Link>
           </div>
         </div>
       </div>

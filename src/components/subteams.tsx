@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Subteams() {
+export default function SubteamsComponent() {
     return (
-        <div className="min-h-screen bg-black">
+        <div className="max-h-[50vh] bg-black">
         <div className="flex h-screen">
           {/* Left Section - Rocket */}
           <div className="flex-1 relative group cursor-pointer overflow-hidden transition-transform duration-500 group-hover:scale-105">
