@@ -1,21 +1,23 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Subteams() {
     return (
         <div className="min-h-screen bg-black">
         <div className="flex h-screen">
           {/* Left Section - Rocket */}
-          <div className="flex-1 relative group cursor-pointer overflow-hidden">
+          <div className="flex-1 relative group cursor-pointer overflow-hidden transition-transform duration-500 group-hover:scale-105">
             <img
-              src="/rocket_image.jpg"
+              src="/images/rocket_image.jpg"
               alt="Rocket"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
-            <div className="absolute bottom-8 left-8 right-8">
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent group-hover:from-black/60 group-hover:via-black/30 group-hover:to-transparent transition-all duration-300 z-10"></div>
+            <div className="absolute bottom-8 left-8 right-8 z-20">
               <h3 className="text-2xl font-bold text-white mb-2">Rocketry</h3>
               <p className="text-gray-200 text-sm">Explore our rocketry projects and innovations</p>
             </div>
+            <Link href="/subteams#rocketry" className="absolute inset-0 z-30"></Link>
           </div>
 
           {/* Middle Section - Filler Text */}
@@ -35,17 +37,18 @@ export default function Subteams() {
           </div>
 
           {/* Right Section - Drone */}
-          <div className="flex-1 relative group cursor-pointer overflow-hidden">
+          <div className="flex-1 relative group cursor-pointer overflow-hidden transition-transform duration-500 group-hover:scale-105">
             <img
-              src="/drone_image.jpeg"
+              src="/images/drone_image.jpeg"
               alt="Drone"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
-            <div className="absolute bottom-8 left-8 right-8">
-              <h3 className="text-2xl font-bold text-white mb-2">Drone Technology</h3>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent group-hover:from-black/60 group-hover:via-black/30 group-hover:to-transparent transition-all duration-300 z-10"></div>
+            <div className="absolute bottom-8 left-8 right-8 z-20">
+              <h3 className="text-2xl font-bold text-white mb-2">Drones & UAVs</h3>
               <p className="text-gray-200 text-sm">Discover our autonomous systems and aerial robotics</p>
             </div>
+            <Link href="/subteams#drones" className="absolute inset-0 z-30"></Link>
           </div>
         </div>
       </div>
