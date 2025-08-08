@@ -43,7 +43,7 @@ export default function SubteamsComponent() {
               alt="Drone"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent group-hover:from-black/60 group-hover:via-black/30 group-hover:to-transparent transition-all duration-300 z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent group-hover:from-black/60 group-hover:via-black/30 group-hover:to-transparent transition-all duration-500 z-10"></div>
             <div className="absolute bottom-8 left-8 right-8 z-20">
               <h3 className="text-2xl font-bold text-white mb-2">Drones & UAVs</h3>
               <p className="text-gray-200 text-sm">Discover our autonomous systems and aerial robotics</p>
